@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
     <title>Angewandte Chemie International Edition</title>
@@ -138,7 +138,8 @@ This style has many limits due to csl constraints, most notably the inability to
         </else-if>
         <else>
           <group delimiter=" ">
-            <text variable="container-title" form="short" font-style="italic"/>
+            <!-- Added suffix "." to the abbreviated journal title -->
+            <text variable="container-title" form="short" font-style="italic" suffix="."/>
             <group delimiter=", ">
               <text macro="year-date"/>
               <group>
